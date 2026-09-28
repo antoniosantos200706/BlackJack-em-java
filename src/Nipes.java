@@ -4,8 +4,4 @@ public enum Nipes {
     ouros,
     copas,
     paus,
-    As,
-    rainha,
-    valete,
-    rei
 }
