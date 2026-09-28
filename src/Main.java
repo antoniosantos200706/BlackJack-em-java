@@ -1,3 +1,5 @@
 public class Main {
-    System.out.println("Good bye, World!");
+    public static void main (String[] args){
+        System.out.println("commit");
+    }
 }
