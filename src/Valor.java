@@ -19,7 +19,7 @@ public enum Valor {
         this.valor = valor;
     }
 
-    public int getValor() {
+    public int getValorNumerico() {
         return valor;
     }
 }

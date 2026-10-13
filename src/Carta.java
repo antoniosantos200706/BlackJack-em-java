@@ -15,6 +15,6 @@ public class Carta {
         return valor;
     }
     public int getValorNumerico(){
-        return valor.getValor();
+        return valor.getValorNumerico();
     }
 }
