@@ -1,8 +1,8 @@
-public class carta {
-    private final valor valor;
+public class Carta {
+    private final Valor valor;
     private final Nipes nipe;
 
-    public carta(valor valor, Nipes nipe) {
+    public Carta(Valor valor, Nipes nipe) {
         this.valor = valor;
         this.nipe = nipe;
     }
@@ -11,7 +11,7 @@ public class carta {
         return nipe;
     }
 
-    public valor getValor() {
+    public Valor getValor() {
         return valor;
     }
     public int getValorNumerico(){

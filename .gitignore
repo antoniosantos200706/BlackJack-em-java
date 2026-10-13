@@ -31,3 +31,5 @@ bin/
 
 # new folder
 to-exclude
+*.class
+.class

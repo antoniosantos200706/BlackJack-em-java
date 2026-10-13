@@ -1,4 +1,4 @@
-public enum valor {
+public enum Valor {
     um(1),
     dois(2),
     tres(3),
@@ -15,7 +15,7 @@ public enum valor {
     rei(10);
     private final int valor;
 
-    valor(int valor) {
+    Valor(int valor) {
         this.valor = valor;
     }
 

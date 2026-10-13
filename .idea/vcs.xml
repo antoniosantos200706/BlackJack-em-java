@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BlackJack-em-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/scr" vcs="Git" />
   </component>
 </project>
