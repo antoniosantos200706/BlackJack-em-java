@@ -19,7 +19,7 @@ public class Baralho {
             stack.push(c);
         }
     }
-    public void shufle( Carta[] c ){
+    private void shufle( Carta[] c ){
         Random r = new Random();
         for (int i = 0 ;i < cartas.length; i++ ){
             int j = r.nextInt(i +1);
