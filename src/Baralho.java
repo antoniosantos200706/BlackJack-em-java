@@ -31,5 +31,7 @@ public class Baralho {
     }
 
 
+    public boolean EstaVazio(){return this.stack.isEmpty(); }
 
+    public Carta tirarCarta () {return this.stack.pop();}
 }
