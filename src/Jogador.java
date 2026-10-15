@@ -19,14 +19,13 @@ public class Jogador {
     public void adicionarCarta(Carta c){
         this.mao.add(c);
         this.pontos += c.getValorNumerico();
-        if (excedeu()){
-            for(Carta b: mao){
-                if (b.getValor()==Valor.As) {
-                    pontos -= 10;
-                }
+        int ind = 0;
+        for (Carta s : mao){
+            if (this.pontos > 21 && s.getValor() == Valor.As ){
+                mao.set(ind,new Carta(Valor.As1, s.getNipe()));
             }
+        ind += 1;
         }
-
     }
 
     public boolean excedeu () {return (this.pontos > 21); } // estourou ?
@@ -34,6 +33,7 @@ public class Jogador {
     public void limparjogo(){ // reseta mão e aposta para fim da ronda
         this.mao.clear();
         this.aposta= 0;
+        this.pontos = 0 ;
     }
 
     // getters

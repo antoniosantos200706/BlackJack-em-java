@@ -10,6 +10,7 @@ public enum Valor {
     nove(9),
     dez(10),
     As(11),
+    As1(1),
     rainha(10),
     valete(10) ,
     rei(10);
