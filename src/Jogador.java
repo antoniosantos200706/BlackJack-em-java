@@ -15,7 +15,11 @@ public class Jogador {
     }
 
 
-// adiciona carta ao jogador e verifica se estourou e aplica a regra do As
+    public List<Carta> getMao() {
+        return mao;
+    }
+
+    // adiciona carta ao jogador e verifica se estourou e aplica a regra do As
     public void adicionarCarta(Carta c){
         this.mao.add(c);
         this.pontos += c.getValorNumerico();
@@ -41,6 +45,7 @@ public class Jogador {
     public void apostar(int aposta) {
         this.aposta = aposta;
     }
+
     public int getPontos() {return pontos;}
 
     public int getSaldo() {
