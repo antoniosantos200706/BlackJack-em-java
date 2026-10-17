@@ -14,12 +14,12 @@ public class Baralho {
                 i++;
             }
         }
-        shufle(cartas);
+        shuffle(cartas);
         for (Carta c : cartas) {
             stack.push(c);
         }
     }
-    private void shufle( Carta[] c ){
+    private void shuffle( Carta[] c ){
         Random r = new Random();
         for (int i = 0 ;i < cartas.length; i++ ){
             int j = r.nextInt(i +1);
