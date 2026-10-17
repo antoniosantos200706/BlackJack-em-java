@@ -21,10 +21,12 @@ public class Jogador {
         this.pontos += c.getValorNumerico();
         int ind = 0;
         for (Carta s : mao){
-            if (this.pontos > 21 && s.getValor() == Valor.As ){
+            if (excedeu() && s.getValor() == Valor.As ){
                 mao.set(ind,new Carta(Valor.As1, s.getNipe()));
+                this.pontos -= 10;
             }
         ind += 1;
+
         }
     }
 
