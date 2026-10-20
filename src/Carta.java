@@ -48,4 +48,8 @@ public class Carta {
         }
         return sb.toString();
     }
+    public void setParaBaixo(){
+        this.viradaCima = false;
+    }
+    public void setParaCima(){this.viradaCima = true;}
 }

@@ -1,10 +1,10 @@
 import java.util.Random;
 
-public class Dealer {
-    private final Jogador dealer;
+public class Dealer extends Jogador {
     private static final Random r = new Random();
+
     public Dealer() {
-        this.dealer = new Jogador(true);
+        super(true);
     }
 
     public boolean dealerTiraCarta(int pontos) {
@@ -15,9 +15,7 @@ public class Dealer {
         return prob <= margem;
     }
 
-
-    public Jogador getDealer() {
-        return dealer;
+    public void limparJogo() {
+        super.limparjogo();
     }
 }
-
